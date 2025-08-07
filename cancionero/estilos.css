@@ -1,0 +1,123 @@
+*{
+    box-sizing: border-box;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+h1{ font-size: 3em;}
+p{ font-size: 1.25em;}
+
+body{
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+    background-color: rgb(229,230,233);
+}
+button{
+    font-size: 1.3em;
+    font-weight: bold;
+    padding: 10px 40px;
+    border-radius: 5%;
+    border: 2px solid rgb(17,17,17);
+}
+.container{
+    max-width: 1400px;
+    margin: auto;
+}
+header{
+    background-color: rgb(193,194,197);
+}
+header .logo{
+margin: 0;
+padding: 15px 15px;
+font-weight: bold;
+color: rgb(17,17,17);
+font-size: 2.30em;
+}
+header .container{
+display: flex;
+flex-direction: column;
+align-items: center;
+}
+
+header nav{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding-bottom: 25px;
+}
+
+header a{
+    padding: 5px 12px;
+    text-decoration: none;
+    font-weight: bold;
+    color: rgb(17,17,17);
+    font-size: 1.20em;
+}
+
+header a:hover{
+    color: rgb(120,47,68);
+}
+
+
+#parte1 .container{
+    text-align: center;
+    padding: 40px 12px;
+}
+
+#hero{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 12vh;
+    background-image: url(img/P01.png);
+    background-repeat: no-repeat;
+  
+    background-position: center center;
+}
+
+footer{
+    text-align: center;
+    font-size: 0.70em;
+}
+
+@media (min-width: 720px){
+    header{
+        position: fixed;
+        width: 100%;
+    }
+    header .container{
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    header nav{
+        flex-direction: row;
+        padding-bottom: 0%;
+        padding-right: 20px;
+        font-size: 0.70em;
+    }
+
+    #parte1 .texto{
+        width: 50%; 
+        text-align: initial;
+        padding: 160px 5px;
+
+    }
+    
+    #parte1 .container{
+        display: flex;
+        justify-content: center;
+
+    }
+
+    #parte1 .img-container{
+      background-image: url(img/W01.png);
+      background-size: cover;
+      background-position: center center;
+      height: 600px;
+      width: 1000px;
+    }
+ }
