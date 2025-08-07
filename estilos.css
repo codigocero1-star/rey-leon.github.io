@@ -1,0 +1,10 @@
+.centrado {
+  text-align: center;
+}
+
+.centrado ul {
+  list-style: none;
+  padding: 0;
+  display: inline-block;
+  text-align: left;
+}
